@@ -1,0 +1,65 @@
+[
+    {
+      "name": "Pollos Copacabana",
+      "address": "Av. 16 de Julio, El Prado, La Paz",
+      "phone": "+591 2 244-4444",
+      "website": "https://polloscopacabana.com",
+      "image": "copacabana.webp",
+      "membershipLevel": 3,
+      "description": "La cadena de comida rápida más querida de La Paz."
+    },
+    {
+      "name": "Banco Mercantil Santa Cruz",
+      "address": "Calle Ayacucho esq. Mercado, La Paz",
+      "phone": "+591 2 211-1111",
+      "website": "https://bmsc.com.bo",
+      "image": "bmsc.webp",
+      "membershipLevel": 3,
+      "description": "Institución financiera líder en Bolivia."
+    },
+    {
+      "name": "Entel Bolivia",
+      "address": "Calle Federico Zuazo, La Paz",
+      "phone": "+591 800 10 5000",
+      "website": "https://entel.bo",
+      "image": "entel.webp",
+      "membershipLevel": 2,
+      "description": "Telecomunicaciones y fibra óptica para todos."
+    },
+    {
+      "name": "Farmacorp",
+      "address": "Av. Montenegro, San Miguel, La Paz",
+      "phone": "+591 2 277-5555",
+      "website": "https://farmacorp.com",
+      "image": "farmacorp.webp",
+      "membershipLevel": 2,
+      "description": "Farmacia y bienestar personal."
+    },
+    {
+      "name": "Hipermaxi",
+      "address": "Av. Busch, Miraflores, La Paz",
+      "phone": "+591 2 222-3333",
+      "website": "https://hipermaxi.com.bo",
+      "image": "hipermaxi.webp",
+      "membershipLevel": 1,
+      "description": "Supermercados con variedad y buenos precios."
+    },
+    {
+      "name": "Café Alexander",
+      "address": "Av. 6 de Agosto, Sopocachi, La Paz",
+      "phone": "+591 2 244-1122",
+      "website": "https://alexander-coffee.com",
+      "image": "alexander.webp",
+      "membershipLevel": 1,
+      "description": "Café de altura y pastelería fina."
+    },
+    {
+      "name": "Boliviana de Aviación",
+      "address": "Calle Potosí, La Paz",
+      "phone": "+591 901 10 5010",
+      "website": "https://boa.bo",
+      "image": "boa.webp",
+      "membershipLevel": 3,
+      "description": "La aerolínea bandera de Bolivia."
+    }
+  ]

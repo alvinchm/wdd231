@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio de Miembros - Cámara de Comercio La Paz</title>
+    <meta name="description" content="Directorio de empresas afiliadas a la Cámara de Comercio de La Paz, Bolivia.">
+    <meta name="author" content="ALVIN CHINO">
+    
+    <meta property="og:title" content="Directorio Cámara de Comercio La Paz" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="https://github.com/alvinchm" />
+    <meta property="og:image" content="https://github.com/alvinchm/WDD231/tree/master/chamber" />
+    <meta property="og:description" content="Conoce a las empresas líderes que impulsan el desarrollo en La Paz." />
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/logo.webp" alt="Logo Cámara La Paz" width="70">
+            <h1>Cámara de Comercio de La Paz</h1>
+        </div>
+        <button id="menu-btn">☰</button>
+    </header>
+    <nav>
+        <ul id="primary-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="discover.html">Descubre</a></li>
+            <li><a href="directory.html" class="active">Directorio</a></li>
+            <li><a href="join.html">Únete</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Directorio de Miembros</h2>
+        
+        <div class="menu-view">
+            <button id="grid">Grid ⊞</button>
+            <button id="list">List 📄</button>
+        </div>
+
+        <article id="members-container" class="grid-view">
+            </article>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Cámara de Comercio de La Paz</strong></p>
+            <p>Calle Ayacucho, La Paz, Bolivia</p>
+            <p>camaralapaz.bo | +591 XXXXXXXX</p>
+        </div>
+        <div class="footer-base">
+            <p>&copy; <span id="year"></span> ALVIN CHINO | WDD 231 Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
