@@ -4,9 +4,9 @@ body {
 }
 
 :root {
-    --primary-color: #003366;
+    --primary-color: #90aac4;
     --secondary-color: #D4AF37;
-    --bg-color: #f5f5f57c;
+    --bg-color: #99cfe47c;
 }
 
 .menu-view {
@@ -93,4 +93,194 @@ body {
         grid-template-columns: 1fr; 
         text-align: center;
     }
+}
+
+.join-container {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+form input, form select, form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input:required {
+    border-left: 5px solid red;
+}
+
+form input:valid {
+    border-left: 5px solid green;
+}
+
+form textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-membership {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-membership h3 {
+    color: var(--primary-color);
+}
+
+.card-membership:nth-child(2) { animation-delay: 0.2s; }
+.card-membership:nth-child(3) { animation-delay: 0.4s; }
+.card-membership:nth-child(4) { animation-delay: 0.6s; }
+.card-membership:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-membership button {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+}
+
+dialog {
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.close-modal {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.thankyou-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.results {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1.5rem;
+    max-width: 70%;
+    border-radius: 5px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.weather-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.spotlight-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10px;
 }

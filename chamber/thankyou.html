@@ -3,16 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member Directory - La Paz Chamber of Commerce</title>
-    <meta name="description" content="Directory of affiliated companies in La Paz, Bolivia.">
-    <meta name="author" content="ALVIN CHINO">
-    
-    <meta property="og:title" content="La Paz Chamber Directory" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://alvinchm.github.io/wdd231/chamber" />
-    <meta property="og:image" content="images/hero-mobile.webp" />
-    <meta property="og:description" content="Meet the leading companies driving development in La Paz." />
-
+    <title>Thank You - La Paz Chamber of Commerce</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -27,25 +18,29 @@
         </div>
         <button id="menu-btn">☰</button>
     </header>
+
     <nav>
         <ul id="primary-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
 
-    <main>
-        <h2>Member Directory</h2>
+    <main class="thankyou-container">
+        <h2>Application Received!</h2>
+        <p>Thank you for applying to join the Chamber of Commerce. We will contact you shortly.</p>
         
-        <div class="menu-view">
-            <button id="grid">Grid ⊞</button>
-            <button id="list">List 📄</button>
+        <div class="results">
+            <h3>Received Information:</h3>
+            <p><strong>Name:</strong> <span id="result-fname"></span></p>
+            <p><strong>Last Name:</strong> <span id="result-lname"></span></p>
+            <p><strong>Email:</strong> <span id="result-email"></span></p>
+            <p><strong>Phone:</strong> <span id="result-phone"></span></p>
+            <p><strong>Organization:</strong> <span id="result-org"></span></p>
+            <p><strong>Date:</strong> <span id="result-date"></span></p>
         </div>
-
-        <article id="members-container" class="grid-view">
-            </article>
     </main>
 
     <footer>
@@ -60,6 +55,6 @@
         </div>
     </footer>
 
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/thankyou.js"></script>
 </body>
 </html>

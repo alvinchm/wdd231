@@ -6,7 +6,7 @@
       "website": "https://polloscopacabana.com",
       "image": "copacabana.webp",
       "membershipLevel": 3,
-      "description": "La cadena de comida rápida más querida de La Paz."
+      "description": "The most beloved fast food chain in La Paz."
     },
     {
       "name": "Banco Mercantil Santa Cruz",
@@ -15,7 +15,7 @@
       "website": "https://bmsc.com.bo",
       "image": "bmsc.webp",
       "membershipLevel": 3,
-      "description": "Institución financiera líder en Bolivia."
+      "description": "Leading financial institution in Bolivia."
     },
     {
       "name": "Entel Bolivia",
@@ -24,7 +24,7 @@
       "website": "https://entel.bo",
       "image": "entel.webp",
       "membershipLevel": 2,
-      "description": "Telecomunicaciones y fibra óptica para todos."
+      "description": "Telecommunications and fiber optics for everyone."
     },
     {
       "name": "Farmacorp",
@@ -33,7 +33,7 @@
       "website": "https://farmacorp.com",
       "image": "farmacorp.webp",
       "membershipLevel": 2,
-      "description": "Farmacia y bienestar personal."
+      "description": "Pharmacy and personal well-being."
     },
     {
       "name": "Hipermaxi",
@@ -42,7 +42,7 @@
       "website": "https://hipermaxi.com.bo",
       "image": "hipermaxi.webp",
       "membershipLevel": 1,
-      "description": "Supermercados con variedad y buenos precios."
+      "description": "Supermarkets with variety and great prices."
     },
     {
       "name": "Café Alexander",
@@ -51,7 +51,7 @@
       "website": "https://alexander-coffee.com",
       "image": "alexander.webp",
       "membershipLevel": 1,
-      "description": "Café de altura y pastelería fina."
+      "description": "High-altitude coffee and fine pastries."
     },
     {
       "name": "Boliviana de Aviación",
@@ -60,6 +60,6 @@
       "website": "https://boa.bo",
       "image": "boa.webp",
       "membershipLevel": 3,
-      "description": "La aerolínea bandera de Bolivia."
+      "description": "Bolivia's flagship airline."
     }
   ]

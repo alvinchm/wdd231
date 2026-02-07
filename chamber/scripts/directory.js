@@ -9,7 +9,7 @@ if (menuBtn) {
 }
 
 document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = `Última Modificación: ${document.lastModified}`;
+document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
 
 const url = 'data/members.json';
 const cards = document.querySelector('#members-container');
@@ -20,7 +20,7 @@ async function getMembers() {
         const data = await response.json();
         displayMembers(data); 
     } catch (error) {
-        console.error('Error al cargar miembros:', error);
+        console.error('Error loading members:', error);
     }
 }
 
@@ -41,20 +41,20 @@ const displayMembers = (members) => {
         address.classList.add('address');
         phone.textContent = member.phone;
         
-        website.textContent = "Visitar Sitio Web";
+        website.textContent = "Visit Website";
         website.setAttribute('href', member.website);
         website.setAttribute('target', '_blank');
 
         logo.setAttribute('src', `images/${member.image}`);
-        logo.setAttribute('alt', `Logo de ${member.name}`);
+        logo.setAttribute('alt', `${member.name} Logo`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '100');
         logo.setAttribute('height', 'auto');
 
         let levelText = "";
-        if(member.membershipLevel === 3) { levelText = "Membresía Gold"; card.classList.add('membership-gold'); }
-        else if(member.membershipLevel === 2) { levelText = "Membresía Silver"; card.classList.add('membership-silver'); }
-        else { levelText = "Membresía Member"; card.classList.add('membership-bronze'); }
+        if(member.membershipLevel === 3) { levelText = "Gold Membership"; card.classList.add('membership-gold'); }
+        else if(member.membershipLevel === 2) { levelText = "Silver Membership"; card.classList.add('membership-silver'); }
+        else { levelText = "Member"; card.classList.add('membership-bronze'); }
         
         level.textContent = levelText;
         level.classList.add('level');
@@ -77,11 +77,11 @@ const listBtn = document.querySelector("#list");
 const display = document.querySelector("#members-container");
 
 gridBtn.addEventListener("click", () => {
-	display.classList.add("grid-view");
-	display.classList.remove("list-view");
+    display.classList.add("grid-view");
+    display.classList.remove("list-view");
 });
 
 listBtn.addEventListener("click", () => {
-	display.classList.add("list-view");
-	display.classList.remove("grid-view");
+    display.classList.add("list-view");
+    display.classList.remove("grid-view");
 });

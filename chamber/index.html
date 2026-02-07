@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - La Paz Chamber of Commerce</title>
+    <meta name="description" content="La Paz Chamber of Commerce home page. Weather, events, and business spotlights.">
+    <meta name="author" content="ALVIN CHINO">
+    
+    <meta property="og:title" content="La Paz Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alvinchm.github.io/wdd231/chamber" />
+    <meta property="og:image" content="images/hero-mobile.webp" />
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/logo.webp" alt="La Paz Chamber Logo" width="10" >
+            <h1>La Paz Chamber of Commerce</h1>
+        </div>
+        <button id="menu-btn">☰</button>
+    </header>
+
+    <nav>
+        <ul id="primary-nav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="home-grid">
+        
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/hero-mobile.webp">
+                <img src="images/la paz.jpg" alt="La Paz City View" width="1200" height="600">
+            </picture>
+            <div class="hero-overlay">
+                <h2>Boosting Business in the Andes</h2>
+                <p>Join Bolivia's largest business network.</p>
+                <a href="join.html" class="cta-btn">Join Now!</a>
+            </div>
+        </div>
+
+        <section class="card events">
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li><strong>Business Roundtable:</strong> Oct 15 - Fairgrounds</li>
+                <li><strong>Gastronomy Fair:</strong> Oct 20 - Urban Park</li>
+                <li><strong>Export Workshop:</strong> Oct 25 - Main Auditorium</li>
+            </ul>
+        </section>
+
+        <section class="card weather">
+            <h3>Weather in La Paz</h3>
+            <div class="weather-content">
+                <img id="weather-icon" src="" alt="Weather Icon">
+                <div class="weather-data">
+                    <p><span id="current-temp">--</span>°C</p>
+                    <p id="weather-desc" style="text-transform: capitalize;"></p>
+                </div>
+            </div>
+            <h4>3-Day Forecast</h4>
+            <div id="forecast" class="forecast-container"></div>
+        </section>
+
+        <div id="spotlights" class="spotlights-container">
+            </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>La Paz Chamber of Commerce</strong></p>
+            <p>Ayacucho Street, La Paz, Bolivia</p>
+            <p>camaralapaz.bo | +591 77507359</p>
+        </div>
+        <div class="footer-base">
+            <p>&copy; <span id="year"></span> ALVIN CHINO | WDD 231 Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/home.js"></script>
+</body>
+</html>
