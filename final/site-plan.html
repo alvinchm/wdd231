@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - EL POLLO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Oswald', sans-serif;
+            color: #D32F2F;
+            text-transform: uppercase;
+        }
+        
+        h1 { border-bottom: 3px solid #FFB300; padding-bottom: 10px; }
+        
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .color-palette { display: flex; gap: 15px; flex-wrap: wrap; }
+        .color-box {
+            width: 120px; height: 120px;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            text-align: center; color: white;
+            font-weight: bold; font-size: 0.9rem;
+            border: 1px solid rgba(0,0,0,0.1);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        /* Tus colores definidos */
+        .primary { background-color: #D32F2F; }
+        .secondary { background-color: #FFB300; color: black; text-shadow: none; }
+        .accent { background-color: #212121; }
+        .bg-color { background-color: #F4F4F4; color: black; text-shadow: none; border: 1px dashed #333; }
+
+        /* --- WIREFRAME STYLES (Aquí ocurre la magia) --- */
+        .wireframe-display {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Estilo base para los "teléfonos/pantallas" */
+        .wf-screen {
+            background: white;
+            border: 2px solid #333;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+        }
+
+        .mobile-view {
+            width: 200px; 
+            height: 400px;
+        }
+
+        .desktop-view {
+            width: 500px; 
+            height: 400px;
+        }
+
+        .wf-nav {
+            height: 30px;
+            background: #212121; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+        .wf-logo { width: 40px; height: 10px; background: #FFB300; }
+        .wf-menu-icon { width: 15px; height: 15px; background: #fff; border-radius: 2px; }
+        .wf-links { display: flex; gap: 5px; } 
+        .wf-link-bar { width: 30px; height: 8px; background: #fff; }
+
+        .wf-hero {
+            height: 100px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #999;
+            font-size: 0.7rem;
+            color: #555;
+        }
+
+        .wf-content-grid {
+            display: grid;
+            gap: 5px;
+            flex-grow: 1;
+        }
+        .mobile-view .wf-content-grid { grid-template-columns: 1fr; }
+        
+        .desktop-view .wf-content-grid { grid-template-columns: 1fr 1fr 1fr; }
+
+        .wf-card {
+            background: #eee;
+            border: 1px solid #ccc;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.6rem;
+        }
+        
+        .wf-card-img { width: 80%; height: 50%; background: #ccc; margin-bottom: 5px; }
+
+        .wf-footer { height: 40px; background: #212121; margin-top: auto; }
+
+        .label {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-family: 'Oswald', sans-serif;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Site Plan: "EL POLLO" Chicken & Grill</h1>
+        <p><strong>Name:</strong> ALVIN CHINO</p>
+        <p><strong>Course:</strong> WDD231 - Web Frontend Development</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>"El Brasa" Chicken & Grill</strong></p>
+            <p>Reason: This name clearly indicates the type of food (Grilled Chicken/Pollos a la Brasa) which is very popular in Bolivia. It is short, easy to remember, and sounds appetizing.</p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The purpose of this website is to provide an online menu for customers in La Paz. It will allow users to see the daily specials, check the prices of combos, and contact the restaurant to place an order via WhatsApp or phone call.</p>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li><strong>Scenario 1:</strong> A father wants to buy dinner for his family. He asks: "What family combos do you have and how much do they cost?"</li>
+                <li><strong>Scenario 2:</strong> A student wants a quick lunch. They ask: "Do you sell quarter chickens and where is the restaurant located?"</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Scheme</h2>
+            <p>I chose colors that stimulate appetite (Red and Yellow/Gold) combined with dark gray for contrast.</p>
+            <div class="color-palette">
+                <div class="color-box primary">#D32F2F<br>Red<br>(Headers)</div>
+                <div class="color-box secondary">#FFB300<br>Gold<br>(Accents)</div>
+                <div class="color-box accent">#212121<br>Dark<br>(Nav/Footer)</div>
+                <div class="color-box bg-color">#F4F4F4<br>Light<br>(Background)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <h3>Headings: Oswald</h3>
+            <p>Used for titles and navigation. It is a strong, bold font often used in food branding.</p>
+            
+            <p style="font-family: 'Open Sans', sans-serif;"><strong>Body: Open Sans</strong></p>
+            <p style="font-family: 'Open Sans', sans-serif;">Used for paragraphs and descriptions. It is clean and easy to read on mobile devices.</p>
+        </section>
+
+        <section>
+            <h2>Wireframes</h2>
+            <p>Visual representation of the layout structure for Mobile and Desktop views.</p>
+            
+            <div class="wireframe-display">
+                
+                <div>
+                    <div class="label">Mobile View</div>
+                    <div class="wf-screen mobile-view">
+                        <div class="wf-nav">
+                            <div class="wf-logo"></div> <div class="wf-menu-icon"></div> </div>
+                        <div class="wf-hero">HERO IMAGE / PROMO</div>
+                        <div class="wf-content-grid">
+                            <div class="wf-card"><div class="wf-card-img"></div>Item 1</div>
+                            <div class="wf-card"><div class="wf-card-img"></div>Item 2</div>
+                            <div class="wf-card"><div class="wf-card-img"></div>Item 3</div>
+                        </div>
+                        <div class="wf-footer"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="label">Desktop View</div>
+                    <div class="wf-screen desktop-view">
+                        <div class="wf-nav">
+                            <div class="wf-logo"></div>
+                            <div class="wf-links">
+                                <div class="wf-link-bar"></div>
+                                <div class="wf-link-bar"></div>
+                                <div class="wf-link-bar"></div>
+                            </div>
+                        </div>
+                        <div class="wf-hero" style="height: 150px;">LARGE BANNER IMAGE + ACTION BUTTON</div>
+                        <div class="wf-content-grid">
+                            <div class="wf-card"><div class="wf-card-img"></div>Chicken Combo</div>
+                            <div class="wf-card"><div class="wf-card-img"></div>Chicharron</div>
+                            <div class="wf-card"><div class="wf-card-img"></div>Family Pack</div>
+                        </div>
+                        <div class="wf-footer"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 "EL POLLO" WDD231 ALVIN CHINO</p>
+    </footer>
+
+</body>
+</html>
