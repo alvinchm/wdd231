@@ -124,4 +124,28 @@
     .card-membership {
         margin-bottom: 20px;
     }
+    /* --- DISCOVER PAGE STYLES (Desktop) --- */
+    
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* for the discover*/
+    .place-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    
+    .place-card img {
+        transition: filter 0.3s;
+    }
+    
+    .place-card:hover img {
+        filter: brightness(1.1);
+    }
 }
