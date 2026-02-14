@@ -3,7 +3,7 @@ export const places = [
         title: "Illimani",
         address: "Cordillera Real, La Paz",
         description: "The guardian of La Paz, an iconic snow-capped mountain visible from all over the city.",
-        image: "images/illimani.webp",
+        image: "images/Illimani.webp",
         learnMore: "https://en.wikipedia.org/wiki/Illimani"
     },
     {
