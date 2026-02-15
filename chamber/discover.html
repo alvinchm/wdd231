@@ -6,14 +6,20 @@
     <title>Discover La Paz - Chamber of Commerce</title>
     <meta name="description" content="Discover tourist spots and opportunities in La Paz, Bolivia.">
     <meta name="author" content="ALVIN CHINO">
+    <meta property="og:title" content="Discover La Paz" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://alvinchm.github.io/wdd231/chamber/images/la paz.jpg" />
+    <meta property="og:url" content="https://alvinchm.github.io/wdd231/chamber/discover.html" />
+    <meta property="og:description" content="Explore the wonders of La Paz. From the Illimani to the Cable Cars." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
-    
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
-
     <header>
         <div class="header-content">
             <img src="images/logo.webp" alt="La Paz Chamber Logo" width="70">
@@ -21,7 +27,6 @@
         </div>
         <button id="menu-btn">☰</button>
     </header>
-
     <nav>
         <ul id="primary-nav">
             <li><a href="index.html">Home</a></li>
@@ -30,18 +35,12 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-
     <main class="discover-main">
-        
         <div id="visit-message" class="visit-message"></div>
-
         <h1>Discover La Paz</h1>
-        
         <div id="places-container" class="discover-grid">
         </div>
-
     </main>
-
     <footer>
         <div class="footer-info">
             <p><strong>La Paz Chamber of Commerce</strong></p>
@@ -53,7 +52,6 @@
             <p id="lastModified"></p>
         </div>
     </footer>
-
     <script type="module" src="scripts/discover.js"></script>
 </body>
 </html>
