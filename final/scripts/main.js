@@ -104,7 +104,7 @@ async function displayDailySpecial() {
     if (menuItems.length === 0) return;
 
     const day = new Date().getDay();
-    const dailyItemIds = [3, 6, 7, 1, 4, 5, 2];
+    const dailyItemIds = [3, 6, 7, 1, 8, 5, 2];
     const specialItemId = dailyItemIds[day];
 
     const specialItem = menuItems.find(item => item.id === specialItemId);
