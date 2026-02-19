@@ -26,15 +26,15 @@ if(lastModEl) lastModEl.textContent = `Last Modification: ${document.lastModifie
 
 const visitMessage = document.getElementById('visit-message');
 if (visitMessage) {
-    let lastVisit = window.localStorage.getItem('visitaBrasa'); 
+    let lastVisit = window.localStorage.getItem('visitaPollo'); 
     let today = new Date().toLocaleDateString();
 
     if (lastVisit) {
         visitMessage.textContent = `Welcome back! Your last visit was on ${lastVisit}. Ready for some chicken?`;
     } else {
-        visitMessage.textContent = `Welcome to El Brasa! Enjoy our delicious food.`;
+        visitMessage.textContent = `Welcome to EL POLLO! Enjoy our delicious food.`;
     }
-    window.localStorage.setItem('visitaBrasa', today);
+    window.localStorage.setItem('visitaPollo', today);
 }
 
 const cards = document.querySelector('#menu-container');
@@ -113,15 +113,15 @@ async function displayDailySpecial() {
         const discountedPrice = (specialItem.price * 0.8).toFixed(2);
 
         specialContainer.innerHTML = `
-            <div style="background-color: var(--primary); color: white; padding: 20px; border-radius: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-top: 20px;">
-                <img src="${specialItem.image}" alt="${specialItem.name}" style="max-width: 100%; width: 250px; border-radius: 8px; object-fit: cover;">
-                <div style="flex: 1; min-width: 200px;">
-                    <h2 style="color: var(--secondary); margin-bottom: 10px;">Today's Special: 20% OFF!</h2>
-                    <h3 style="color: white;">${specialItem.name}</h3>
+            <div class="special-container">
+                <img src="${specialItem.image}" alt="${specialItem.name}" class="special-img">
+                <div class="special-text">
+                    <h2 class="special-subtitle">Today's Special: 20% OFF!</h2>
+                    <h3 class="special-name">${specialItem.name}</h3>
                     <p>${specialItem.description}</p>
-                    <p style="text-decoration: line-through; font-size: 1.2rem; margin-top: 10px;">Regular: Bs. ${specialItem.price}</p>
-                    <p style="font-size: 1.8rem; font-weight: bold; color: var(--secondary);">Today: Bs. ${discountedPrice}</p>
-                    <a href="menu.html" class="btn" style="display: inline-block; width: auto; text-decoration: none; margin-top: 15px;">Order Now</a>
+                    <p class="special-old-price">Regular: Bs. ${specialItem.price}</p>
+                    <p class="special-new-price">Today: Bs. ${discountedPrice}</p>
+                    <a href="menu.html" class="btn btn-link">Order Now</a>
                 </div>
             </div>
         `;
