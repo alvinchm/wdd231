@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - EL POLLO</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🍗 EL POLLO</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="text-align: center; max-width: 600px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px;">
+        <h1 style="color: #D32F2F;">Thank You for Your Order!</h1>
+        <p>We have received the following information:</p>
+        
+        <div id="results" style="background: #F4F4F4; padding: 20px; text-align: left; margin: 20px 0; border-radius: 8px; border: 1px solid #ccc;">
+        </div>
+
+        <a href="index.html" class="btn" style="display:inline-block; width:auto; text-decoration:none;">Back to Home</a>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> EL POLLO. WDD231 Final Project.</p>
+        <p><a href="https://youtube.com/tu-video-link" target="_blank">Watch my Video Demonstration</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const resultsContainer = document.getElementById('results');
+        
+        const userMessage = urlParams.get('order') || urlParams.get('message') || "No message provided";
+        
+        if (urlParams.has('fname')) {
+            resultsContainer.innerHTML = `
+                <p><strong>Name:</strong> ${urlParams.get('fname')}</p>
+                <p><strong>Email:</strong> ${urlParams.get('email')}</p>
+                <p><strong>Message/Order:</strong> ${userMessage}</p>
+            `;
+        } else {
+            resultsContainer.innerHTML = "<p>No data received. Please fill out the form first.</p>";
+        }
+    </script>
+</body>
+</html>
