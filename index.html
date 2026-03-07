@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Course Home Page</title>
+    <meta name="description" content="WDD 231 Course Home Page">
+    <meta name="author" content="Alvin Chino">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.svg" alt="Site Logo" width="50" height="50">
+            <span>WDD 231</span>
+        </div>
+        <button id="menu" aria-label="Menu">X</button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="">Chamber Project</a></li>
+            <li><a href="">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        
+        <div class="top-sections">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <div class="box-content">
+                    <p> My name is Alvin. I was born in Bolivia and live with my family in La Paz. I am currently a student at local university. I have a few hobbies like play volleybal listen music or sleep. </p>
+                </div>
+            </section>
+
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+                <div class="box-content image-box">
+                    <img src="images/alvin-profile.jpg" alt="Photo" width="200" height="200">
+                </div>
+            </section>
+        </div>
+
+        <section class="certificate">
+            <h2>Web Certificate Courses</h2>
+            <div class="box-content">
+                <div class="filter-buttons">
+                    <button id="btn-all">All</button>
+                    <button id="btn-cse">CSE</button>
+                    <button id="btn-wdd">WDD</button>
+                </div>
+                
+                <div id="course-container" class="course-grid">
+                    </div>
+                
+                <p class="credits-text">The total credits for course listed above is <span id="total-credits">0</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> ALVIN CHINO La Paz, Bolivia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

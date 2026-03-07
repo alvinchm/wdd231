@@ -1,0 +1,154 @@
+:root {
+    --header-bg: #e0f2e9; 
+    --black: #222;
+    --dark-grey: #444;
+    --light-grey: #d3d3d3;
+    --border-color: #999;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    background-color: var(--light-grey);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-grey);
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid var(--black);
+}
+
+main {
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    background-color: var(--black);
+    color: white;
+    margin: 0;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.box-content {
+    background-color: var(--light-grey);
+    padding: 15px;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+}
+
+.image-box img {
+    background-color: #aaa; 
+    max-width: 100%;
+    height: auto;
+}
+
+.filter-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-buttons button {
+    background-color: var(--light-grey);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.course-item {
+    background-color: var(--light-grey);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.course-item.completed {
+    background-color: #b0c4de; 
+}
+
+.credits-text {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: var(--light-grey);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
+
+.social-links {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.social-links a { color: black; text-decoration: none; }

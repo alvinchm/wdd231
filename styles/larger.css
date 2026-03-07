@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: flex-start;
+        background-color: var(--black);
+    }
+
+    .navigation li a {
+        border-bottom: none;
+        border-right: 1px solid var(--dark-grey);
+        padding: 10px 20px;
+    }
+
+    .top-sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        gap: 20px;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
