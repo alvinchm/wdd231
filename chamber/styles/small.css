@@ -1,0 +1,142 @@
+
+:root {
+    --primary-color: #0b3b60; 
+    --secondary-color: #d9e2ec; 
+    --accent-color: #e07a5f; 
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --bg-color: #f4f7f6;
+  }
+  
+  body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  #logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  #menu-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  #main-nav ul {
+    display: none; 
+    list-style: none;
+    background-color: #082944;
+    flex-direction: column;
+  }
+  
+  #main-nav ul.open {
+    display: flex;
+  }
+  
+  #main-nav li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-light);
+  }
+  
+  #main-nav li a:hover, #main-nav li a.active {
+    background-color: var(--accent-color);
+  }
+  
+  main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .view-toggles {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .view-toggles button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .view-toggles button:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  #directory-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .member-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+  
+  .member-card img {
+    margin: 0 auto 1rem auto;
+    max-height: 100px;
+    object-fit: contain;
+  }
+  
+  .member-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .member-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--accent-color);
+    font-weight: bold;
+  }
+
+  footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  .contact-info {
+    margin-bottom: 1rem;
+  }

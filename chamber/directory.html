@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Paz Chamber of Commerce | Member Directory</title>
+    <meta name="description" content="Directory of business members for the La Paz Chamber of Commerce WDD231 Project.">
+    <meta name="author" content="ALVIN CHINO">
+    
+    <meta property="og:title" content="La Paz Chamber Directory" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alvinchm.github.io/wdd231/chamber" />
+    <meta property="og:image" content="images/hero-mobile.webp" />
+    <meta property="og:description" content="Meet the leading companies driving development in La Paz." />
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Chamber Logo" id="logo">
+        <h1>La Paz Chamber of Commerce</h1>
+        <button id="menu-btn" aria-label="Open Navigation">&#9776;</button>
+    </header>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Member Directory</h2>
+        
+        <div class="view-toggles">
+            <button id="grid-btn" aria-label="Grid View">Grid</button>
+            <button id="list-btn" aria-label="List View">List</button>
+        </div>
+
+        <div id="directory-container" class="grid-view">
+            </div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>La Paz Chamber of Commerce</p>
+            <p>Av. 16 de Julio, El Prado</p>
+            <p>info@lapazchamber.com | +591 77507359</p>
+        </div>
+        <div class="dev-info">
+            <p>&copy; <span id="currentyear"></span> Alvin Chino WDD 231</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
