@@ -9,7 +9,7 @@ menuBtn.addEventListener('click', () => {
 document.getElementById('year').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
 
-const apiKey = 'b0f3e30b816b797b677145b4052585c3'; 
+const apiKey = 'f75594672434c8de6dac60e593a1d975'; 
 const lat = -16.4897;
 const lon = -68.1193;
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
@@ -48,14 +48,14 @@ async function fetchWeather() {
 }
 fetchWeather();
 
-const membersURL = 'data/members.json';
+const membersURL = './data/members.json';
 
 async function loadSpotlights() {
     try {
         const response = await fetch(membersURL);
         const members = await response.json();
 
-        const eligibleMembers = members.filter(m => m.level >= 2);
+        const eligibleMembers = members.filter(m => m.membershipLevel >= 2);
 
         const shuffled = eligibleMembers.sort(() => 0.5 - Math.random());
         const spotlights = shuffled.slice(0, 3); 
@@ -64,7 +64,8 @@ async function loadSpotlights() {
         container.innerHTML = ''; 
         
         spotlights.forEach(member => {
-            const levelName = member.level === 3 ? 'Gold Member' : 'Silver Member';
+            const levelName = member.membershipLevel === 3 ? 'Gold Member' : 'Silver Member';
+            
             container.innerHTML += `
                 <div class="spotlight-card">
                     <h4>${member.name}</h4>
