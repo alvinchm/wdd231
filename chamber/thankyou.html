@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - La Paz Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.webp" alt="La Paz Chamber Logo" width="70">
+            <h1>La Paz Chamber of Commerce</h1>
+        </div>
+        <button id="menu-btn">☰</button>
+    </header>
+    <nav>
+        <ul id="primary-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main class="thankyou-container">
+        <h2>Application Received!</h2>
+        <p>Thank you for applying to join the Chamber of Commerce. We will contact you shortly.</p>
+        
+        <div class="results">
+            <h3>Received Information:</h3>
+            <p><strong>Name:</strong> <span id="result-fname"></span></p>
+            <p><strong>Last Name:</strong> <span id="result-lname"></span></p>
+            <p><strong>Email:</strong> <span id="result-email"></span></p>
+            <p><strong>Phone:</strong> <span id="result-phone"></span></p>
+            <p><strong>Organization:</strong> <span id="result-org"></span></p>
+            <p><strong>Date:</strong> <span id="result-date"></span></p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p><strong>La Paz Chamber of Commerce</strong></p>
+            <p>Ayacucho Street, La Paz, Bolivia</p>
+            <p>camaralapaz.bo | +591 77507359</p>
+        </div>
+        <div class="footer-base">
+            <p>&copy; <span id="year"></span> ALVIN CHINO | WDD 231 Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/thankyou.js" defer></script>
+</body>
+</html>
