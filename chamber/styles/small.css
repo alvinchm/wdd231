@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #0b3b60; 
-  --secondary-color: #d9e2ec; 
-  --accent-color: #e07a5f; 
+  --primary-color: #0b3b60;
+  --secondary-color: #d9e2ec;
+  --accent-color: #e07a5f;
   --text-dark: #333333;
   --text-light: #ffffff;
   --bg-color: #f4f7f6;
@@ -14,7 +14,9 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
@@ -53,17 +55,19 @@ header h1 {
   cursor: pointer;
 }
 
-nav ul, #primary-nav {
-  display: none; 
+nav ul,
+#primary-nav {
+  display: none;
   list-style: none;
   background-color: #082944;
   flex-direction: column;
   padding: 0;
   margin: 0;
-  color: #ffffff
+  color: #ffffff;
 }
 
-nav ul.open {
+nav ul.open,
+#primary-nav.open {
   display: flex;
 }
 
@@ -71,12 +75,13 @@ nav li a {
   display: block;
   padding: 1rem;
   text-align: center;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  color: #ffffff ;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
   text-decoration: none;
 }
 
-nav li a:hover, nav li a.active {
+nav li a:hover,
+nav li a.active {
   background-color: var(--accent-color);
   color: #000000;
   font-weight: bold;
@@ -127,7 +132,7 @@ main {
 .cta-btn {
   display: inline-block;
   background-color: var(--accent-color);
-  color: white;
+  color: #000000;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -135,12 +140,14 @@ main {
   margin-top: 10px;
 }
 
-.card, #weather-card, #spotlights {
+.card,
+#weather-card,
+#spotlights {
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .events ul {
@@ -208,7 +215,7 @@ h2 {
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .member-card img {
@@ -237,7 +244,8 @@ footer {
   margin-top: 2rem;
 }
 
-.footer-info, .contact-info {
+.footer-info,
+.contact-info {
   margin-bottom: 1rem;
 }
 
@@ -256,7 +264,7 @@ footer {
   padding: 1.5rem;
   border-radius: 8px;
   border: 1px solid #ddd;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .form-section label {
@@ -281,8 +289,8 @@ footer {
   background-color: #fafafa;
 }
 
-.form-section input:focus, 
-.form-section select:focus, 
+.form-section input:focus,
+.form-section select:focus,
 .form-section textarea:focus {
   outline: none;
   border-color: var(--accent-color);
@@ -306,8 +314,15 @@ footer {
 }
 
 @keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(20px) scale(0.95); }
-  100% { opacity: 1; transform: translateY(0) scale(1); }
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .membership-cards {
@@ -322,15 +337,26 @@ footer {
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   animation: fadeInUp 0.6s ease-out forwards;
   opacity: 0;
 }
 
-.card-membership:nth-of-type(1) { animation-delay: 0.1s; }
-.card-membership:nth-of-type(2) { animation-delay: 0.3s; }
-.card-membership:nth-of-type(3) { animation-delay: 0.5s; }
-.card-membership:nth-of-type(4) { animation-delay: 0.7s; }
+.card-membership:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+
+.card-membership:nth-of-type(2) {
+  animation-delay: 0.3s;
+}
+
+.card-membership:nth-of-type(3) {
+  animation-delay: 0.5s;
+}
+
+.card-membership:nth-of-type(4) {
+  animation-delay: 0.7s;
+}
 
 .card-membership h3 {
   color: var(--primary-color);
@@ -358,12 +384,12 @@ dialog {
   border-radius: 8px;
   padding: 2rem;
   max-width: 400px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
 dialog::backdrop {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .close-modal {
@@ -389,7 +415,7 @@ dialog::backdrop {
   max-width: 500px;
   margin: 2rem auto;
   text-align: left;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .results p {
@@ -398,14 +424,86 @@ dialog::backdrop {
   padding-bottom: 0.5rem;
 }
 
-#primary-nav {
-  display: none; 
+.discover-main {
+  display: flex;
   flex-direction: column;
-  background-color: #082944;
-  padding: 0;
-  margin: 0;
+  gap: 2rem;
 }
 
-#primary-nav.open {
+.visit-message {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.discover-content h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.discover-grid {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.place-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.place-card:hover {
+  transform: translateY(-5px);
+}
+
+.place-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.place-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.place-card address {
+  font-style: normal;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.place-card p {
+  margin-bottom: 1.5rem;
+}
+
+.place-card button {
+  background-color: var(--accent-color);
+  color: #000000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.place-card button:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
