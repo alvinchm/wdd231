@@ -1,3 +1,24 @@
+@media (min-width: 641px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "area1 area2"
+      "area3 area4"
+      "area5 area6"
+      "area7 area8";
+    gap: 1.5rem;
+  }
+
+  .place-card img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  .place-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}
+
 @media (min-width: 768px) {
   #menu-btn {
     display: none;
@@ -15,10 +36,12 @@
     padding: 1rem 2rem;
   }
 
-  .home-grid {
+  .home-grid,
+  .join-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
+    align-items: start;
   }
 
   .hero {
@@ -63,10 +86,6 @@
     gap: 2rem;
   }
 
-  .grid-view .member-card {
-    text-align: center;
-  }
-
   .list-view {
     display: flex !important;
     flex-direction: column;
@@ -105,13 +124,6 @@
     text-align: left;
   }
 
-  .join-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    align-items: start;
-  }
-
   .form-section {
     grid-column: 1 / 2;
   }
@@ -119,16 +131,35 @@
   .membership-cards {
     grid-column: 2 / 3;
   }
+}
+
+@media (min-width: 1025px) {
+  .discover-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .visit-message {
+    width: 100%;
+    position: static;
+  }
+
+  .discover-content {
+    width: 100%;
+  }
 
   .discover-content h2 {
     text-align: center;
+    margin-bottom: 2rem;
   }
 
   .discover-grid {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    align-items: start;
-    max-width: 1200px;
+    grid-template-areas:
+      "area1 area2 area3 area4"
+      "area5 area6 area7 area8";
+    gap: 1.5rem;
   }
 }
