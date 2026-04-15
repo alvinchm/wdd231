@@ -1,0 +1,17 @@
+[
+    { "id": 1, "name": "1/4 Grilled Chicken", "price": 25, "description": "Quarter chicken with fries and salad.", "image": "images/chiken1.webp" },
+    { "id": 2, "name": "1/2 Grilled Chicken", "price": 45, "description": "Half chicken, family fries, and salad.", "image": "images/chiken2.webp" },
+    { "id": 3, "name": "Whole Chicken Combo", "price": 85, "description": "Whole chicken, large fries, salad, and 2L soda.", "image": "images/chiken.webp" },
+    { "id": 4, "name": "Pork Chicharron", "price": 55, "description": "Crispy pork with mote and potatoes.", "image": "images/chicharron.webp" },
+    { "id": 5, "name": "Mixed Chicharron", "price": 70, "description": "Pork and chicken chicharron to share.", "image": "images/mixed.webp" },
+    { "id": 6, "name": "Salchipapa", "price": 15, "description": "Fries with sliced sausages and sauces.", "image": "images/salchipapa.webp" },
+    { "id": 7, "name": "Chaufa Rice", "price": 20, "description": "Fried rice with chicken pieces.", "image": "images/chaufa.webp" },
+    { "id": 8, "name": "Family Fries", "price": 25, "description": "A huge portion of crispy french fries.", "image": "images/fries.webp" },
+    { "id": 9, "name": "Coca Cola 2L", "price": 12, "description": "Cold 2-liter Coca Cola.", "image": "images/cocacola.webp" },
+    { "id": 10, "name": "Papaya Salvietti", "price": 18, "description": "Traditional Bolivian papaya soda 3L.", "image": "images/soda.webp" },
+    { "id": 11, "name": "Water Bottle", "price": 5, "description": "500ml pure water.", "image": "images/water.webp" },
+    { "id": 12, "name": "Extra Llajua", "price": 3, "description": "Spicy traditional bolivian sauce.", "image": "images/llajua.webp" },
+    { "id": 13, "name": "Extra Mayonnaise", "price": 3, "description": "House special mayo.", "image": "images/mayonesa.webp" },
+    { "id": 14, "name": "Side Salad", "price": 10, "description": "Fresh lettuce, tomatoes, and onions.", "image": "images/salad.webp" },
+    { "id": 15, "name": "Fried Banana", "price": 8, "description": "Sweet fried plantains.", "image": "images/platano.webp" }
+  ]

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - EL POLLO Chicken</title>
+    <meta name="description" content="View our full menu of chicken, chicharron, and combos.">
+    <meta name="author" content="ALVIN CHINO">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EL POLLO Chicken">
+    <meta property="og:description" content="Order our chicken and chicharron that are the best in town.">
+    <meta property="og:image" content="https://alvinchm.github.io/wdd231/final/images/mixed.jpg.webp">
+    <meta property="og:url" content="https://alvinchm.github.io/wdd231/final/menu.html">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">EL POLLO</a>
+            <button id="menu-btn" class="menu-btn">☰</button>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Menu</h1>
+        <p>Choose from our 15 delicious options!</p>
+
+        <div id="menu-container" class="menu-grid"></div>
+
+        <dialog id="item-modal">
+            <h2 id="modal-title">Item Name</h2>
+            <p id="modal-desc">Item Description will go here.</p>
+            <button id="close-modal" class="btn">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EL POLLO. WDD231 Final Project.</p>
+        <p><a href="https://www.loom.com/share/322f022f85144965883950855cdeeecc" target="_blank">Watch my Video
+                Demonstration</a></p>
+    </footer>
+</body>
+
+</html>
